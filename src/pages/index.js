@@ -51,12 +51,12 @@ export default function Index() {
                 Projetos
               </h1>
               <Project
-                image={require("../assets/screenshots/siva.png")}
+                image={require("../assets/screenshots/siva.jpg")}
                 title="Siva"
                 description="Aplicativo para navegar Instagram anonimamente. Desenvolvido com Next.js (React) e Tailwind.css."
               />
               <Project
-                image={require("../assets/screenshots/idle.gif")}
+                image={require("../assets/screenshots/idle.webp")}
                 title="Steam-Idle"
                 description="Ferramenta para 'idlear' jogos na Steam. Desenvolvido com React
               e Electron."
