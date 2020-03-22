@@ -40,11 +40,13 @@ export default function Index() {
             <div className="mx-2">
               <h1 className="text-4xl font-thin text-gray-600 md:text-5xl dark:text-gray-200">
                 Oi, meu nome é{" "}
-                <span className="font-semibold ">Henrick Mello</span>
+                <span className="font-semibold dark:text-white">
+                  Henrick Mello
+                </span>
               </h1>
               <h2 className="text-xl md:text-3xl">
                 e sou um{" "}
-                <span className="text-gray-600 dark:text-gray-200">
+                <span className="text-gray-600 dark:text-gray-100 ">
                   FullStack Web Developer
                 </span>
                 .
@@ -60,7 +62,7 @@ export default function Index() {
           </div>
           <main>
             <div className="container h-auto mx-auto">
-              <section>
+              <section className="py-2">
                 <h1 className="mb-4 text-5xl font-semibold text-center">
                   Sobre Mim
                 </h1>
@@ -69,34 +71,40 @@ export default function Index() {
                   Sou desenvolvedor autodidata desde os 11 anos de idade. Possuo
                   amplo conhecimento na área de desenvolvimento web,
                   principalmente no ecossistema do NodeJs (frontend e backend).
-                  <p>
-                    Minha framework web de escolha é o ReactJS, porém, devido à
-                    minha mentalidade "JS First", possuo grande facilidade para
-                    aprender qualquer outra linguagem baseada em JavaScript.
-                  </p>
+                </p>
+                <p className="mx-4 my-4 text-justify">
+                  Minha framework web de escolha é o ReactJS, entretanto, devido
+                  à minha mentalidade "JS First", possuo grande facilidade para
+                  aprender qualquer outra linguagem baseada em JavaScript.
+                </p>
+                <p className="mx-4 my-4 text-justify">
                   Ademais, possuo notáveis conhecimento em outras áreas
                   relacionadas a computação como edição de áudio e vídeo, design
                   gráfico, banco de dados, segurança da informação, hardware,
                   devops, etc.{" "}
                 </p>
               </section>
-              <section className="py-4">
+              <hr className="mx-12 my-8 border-b border-gray-200 rounded dark:border-gray-600" />
+              <section className="py-2">
                 <h1 className="mb-4 text-5xl font-semibold text-center">
                   Projetos
                 </h1>
                 <div className="grid grid-cols-1 md:grid-cols-2">
                   <Project
                     image={require("../assets/screenshots/siva.jpg")}
+                    link="https://sivaig.now.sh"
                     title="Siva"
                     description="Aplicativo para navegar Instagram anonimamente. Desenvolvido com Next.js (React) e Tailwind.css."
                   />
                   <Project
                     image={require("../assets/screenshots/simposio.jpg")}
+                    link="https://simposioredesifrj.now.sh"
                     title="Simpósio de Redes do IFRJ"
                     description="Site do 1º Simpósio de Redes da Região dos Lagos. Desenvolvido com React e Tailwind. Adaptado para portáteis e extremamente leve."
                   />
                   <Project
                     image={require("../assets/screenshots/idle.jpg")}
+                    link="https://github.com/DevNvll/Steam-Idle"
                     title="Steam-Idle"
                     description="Ferramenta para 'idlear' jogos na Steam. Desenvolvido com React
               e Electron."

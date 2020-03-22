@@ -24,8 +24,16 @@ export default function Navbar({ dark, toggleDarkMode }) {
           : "transparent"
       }}
     >
-      <div className="container flex justify-between mx-auto">
-        <div className="flex justify-center w-full ">
+      <div className="container flex content-between justify-around w-full mx-auto">
+        <p
+          className="mx-4 font-extrabold"
+          style={{
+            textShadow: "0 2px 4px rgba(0,0,0,0.10)"
+          }}
+        >
+          HM
+        </p>
+        <div className="flex justify-center w-full mx-auto">
           <a
             href="https://www.github.com/DevNvll/"
             target="_blank"
