@@ -1,7 +1,5 @@
 import { useScrollPosition } from "../hooks/useScrollPos"
 import { useState, useEffect } from "react"
-import Sun from "../assets/icons/sun.svg"
-import Moon from "../assets/icons/moon.svg"
 
 export default function Navbar({ dark, toggleDarkMode }) {
   const [scrolled, setScroll] = useState(false)
@@ -45,9 +43,15 @@ export default function Navbar({ dark, toggleDarkMode }) {
             LinkedIn
           </a>
         </div>
-        <div className="w-5 cursor-pointer" onClick={toggleDarkMode}>
+        <div className="w-5 px-4 cursor-pointer" onClick={toggleDarkMode}>
           {dark ? (
-            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              className="w-5"
+              alt="Toggle dark mode"
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -56,7 +60,13 @@ export default function Navbar({ dark, toggleDarkMode }) {
               />
             </svg>
           ) : (
-            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              className="w-5"
+              alt="Toggle dark mode"
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
