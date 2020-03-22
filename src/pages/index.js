@@ -29,7 +29,12 @@ export default function Index() {
       </Head>
 
       <div className={cx({ "mode-dark": isDarkMode })}>
-        <Navbar dark={isDarkMode} />
+        <Navbar
+          dark={isDarkMode}
+          toggleDarkMode={() => {
+            setDarkMode(d => !d)
+          }}
+        />
         <div className="w-full min-h-screen text-gray-600 bg-gray-100 dark:text-gray-200 dark:bg-gray-900">
           <div className="flex flex-col items-center justify-center w-full h-screen">
             <div className="mx-2">
