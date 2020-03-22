@@ -1,7 +1,7 @@
 import { useScrollPosition } from "../hooks/useScrollPos"
 import { useState, useEffect } from "react"
 
-export default function Navbar() {
+export default function Navbar({ dark }) {
   const [scrolled, setScroll] = useState(false)
 
   useEffect(() => {
@@ -14,10 +14,14 @@ export default function Navbar() {
 
   return (
     <nav
-      className="fixed top-0 flex items-center justify-center w-full h-16 text-gray-200 transition duration-200 ease-in-out"
+      className="fixed top-0 z-10 flex items-center justify-center w-full h-16 text-gray-600 transition duration-200 ease-in-out dark:text-gray-200"
       style={{
         backdropFilter: "blur(9px)",
-        backgroundColor: scrolled ? "rgba(5,5,5,0.5)" : "transparent"
+        backgroundColor: scrolled
+          ? !dark
+            ? "rgba(255,255,255,0.5)"
+            : "rgba(5, 5, 5, 0.5)"
+          : "transparent"
       }}
     >
       <div className="container mx-auto ">
@@ -26,7 +30,7 @@ export default function Navbar() {
             href="https://www.github.com/DevNvll/"
             target="_blank"
             rel="noopener"
-            className="mr-4 no-underline transition duration-200 border-b border-transparent cursor-pointer hover:border-gray-200 text-semibold transition-ease-in-out"
+            className="mr-4 no-underline transition duration-200 border-b border-transparent cursor-pointer hover:border-gray-200 dark-hover:border-gray-200 text-semibold transition-ease-in-out"
           >
             GitHub
           </a>
@@ -37,14 +41,6 @@ export default function Navbar() {
             className="mr-4 no-underline transition duration-200 border-b border-transparent cursor-pointer hover:border-gray-200 text-semibold transition-ease-in-out"
           >
             LinkedIn
-          </a>
-          <a
-            href="mailto:hnrkmello@gmail.com"
-            target="_blank"
-            rel="noopener"
-            className="no-underline transition duration-200 border-b border-transparent cursor-pointer hover:border-gray-200 text-semibold transition-ease-in-out"
-          >
-            E-Mail
           </a>
         </div>
       </div>
