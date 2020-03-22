@@ -11,7 +11,14 @@ module.exports = {
       "dark-group-hover"
     ],
 
-    borderColor: ["dark", "dark-focus", "dark-focus-within"],
+    borderColor: [
+      "dark",
+      "dark-focus",
+      "dark-focus-within",
+      "hover",
+      "focus",
+      "active"
+    ],
     textColor: ["dark", "dark-hover", "dark-active"]
   },
   theme: {

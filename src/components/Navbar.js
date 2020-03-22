@@ -24,7 +24,7 @@ export default function Navbar({ dark, toggleDarkMode }) {
           : "transparent"
       }}
     >
-      <div className="container flex content-between justify-around w-full mx-auto">
+      <div className="container flex content-between justify-center w-full mx-auto ">
         <p
           className="mx-4 font-extrabold"
           style={{
@@ -51,7 +51,10 @@ export default function Navbar({ dark, toggleDarkMode }) {
             LinkedIn
           </a>
         </div>
-        <div className="w-5 mx-4 cursor-pointer" onClick={toggleDarkMode}>
+        <div
+          className="flex justify-center w-5 mx-4 cursor-pointer "
+          onClick={toggleDarkMode}
+        >
           {dark ? (
             <svg
               fill="none"
