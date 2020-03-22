@@ -43,7 +43,7 @@ export default function Navbar({ dark, toggleDarkMode }) {
             LinkedIn
           </a>
         </div>
-        <div className="w-5 px-4 cursor-pointer" onClick={toggleDarkMode}>
+        <div className="w-5 mx-4 cursor-pointer" onClick={toggleDarkMode}>
           {dark ? (
             <svg
               fill="none"
