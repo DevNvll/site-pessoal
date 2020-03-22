@@ -109,6 +109,12 @@ export default function Index() {
                     description="Ferramenta para 'idlear' jogos na Steam. Desenvolvido com React
               e Electron."
                   />
+                  <Project
+                    image={require("../assets/screenshots/rplace.jpg")}
+                    link="https://github.com/DevNvll/rplace-mini"
+                    title="RPlace Mini"
+                    description="Mini-game multiplayer em tempo real baseado no /r/place. Desenvolvido em React e Socket.io"
+                  />
                 </div>
               </section>
             </div>
