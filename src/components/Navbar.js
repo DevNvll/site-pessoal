@@ -26,7 +26,13 @@ export default function Navbar({ dark, toggleDarkMode }) {
     >
       <div className="container flex content-between justify-center w-full mx-auto ">
         <p
-          className="mx-4 font-extrabold"
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            })
+          }}
+          className="mx-4 font-extrabold cursor-pointer"
           style={{
             textShadow: "0 2px 4px rgba(0,0,0,0.10)"
           }}

@@ -1,0 +1,34 @@
+{
+  "pt": {
+    "myNameIs": "Oi, meu nome é ",
+    "iAm": "e sou um ",
+    "aboutMe": "Sobre Mim",
+    "firstP": "Sou desenvolvedor autodidata desde os 11 anos de idade. Possuo amplo conhecimento na área de desenvolvimento web, principalmente no ecossistema do NodeJs (frontend e backend).",
+    "secondP": "Minha framework web de escolha é o ReactJS, entretanto, devido à minha mentalidade \"JS First\", possuo grande facilidade para aprender qualquer outra linguagem baseada em JavaScript.",
+    "thirdP": "Ademais, possuo notáveis conhecimento em outras áreas relacionadas a computação como edição de áudio e vídeo, design gráfico, banco de dados, segurança da informação, hardware, devops, etc.",
+    "projects": "Projetos",
+    "teza": "Aplicativo web em que trabalhei desde o início. Desenvolvi grande parte da UX e lógica de React junto com a equipe.",
+    "siva": "Aplicativo para navegar Instagram anonimamente. Desenvolvido com Next.js (React) e Tailwind.css.",
+    "gestif": "Sistema de gestão administrativa para o IFRJ Campus Arraial do Cabo. Desenvolvido com React, Express e MongoDB.",
+    "steamidle": "Ferramenta para 'idlear' jogos na Steam. Desenvolvido com React e Electron.",
+    "simposio": "Site do 1º Simpósio de Redes da Região dos Lagos. Desenvolvido com React e Tailwind. Adaptado para portáteis e extremamente leve.",
+    "rplace": "Mini-game multiplayer em tempo real baseado no /r/place. Desenvolvido em React e Socket.io.",
+    "vault": "Bot de Discord com painel web para auxiliar a seleção de tags no servidor Vault130. Desenvolvido em React e Discord.js."
+  },
+  "en": {
+    "myNameIs": "Hi, my name is ",
+    "iAm": "and I'm a ",
+    "aboutMe": "About Me",
+    "firstP": "Sou desenvolvedor autodidata desde os 11 anos de idade. Possuo amplo conhecimento na área de desenvolvimento web, principalmente no ecossistema do NodeJs (frontend e backend).",
+    "secondP": "Minha framework web de escolha é o ReactJS, entretanto, devido à minha mentalidade \"JS First\", possuo grande facilidade para aprender qualquer outra linguagem baseada em JavaScript.",
+    "thirdP": "Ademais, possuo notáveis conhecimento em outras áreas relacionadas a computação como edição de áudio e vídeo, design gráfico, banco de dados, segurança da informação, hardware, devops, etc.",
+    "projects": "Projects",
+    "teza": "Aplicativo web em que trabalhei desde o início. Desenvolvi grande parte da UX e lógica de React junto com a equipe.",
+    "siva": "Aplicativo para navegar Instagram anonimamente. Desenvolvido com Next.js (React) e Tailwind.css.",
+    "gestif": "Sistema de gestão administrativa para o IFRJ Campus Arraial do Cabo. Desenvolvido com React, Express e MongoDB.",
+    "steamidle": "Ferramenta para 'idlear' jogos na Steam. Desenvolvido com React e Electron.",
+    "simposio": "Site do 1º Simpósio de Redes da Região dos Lagos. Desenvolvido com React e Tailwind. Adaptado para portáteis e extremamente leve.",
+    "rplace": "Mini-game multiplayer em tempo real baseado no /r/place. Desenvolvido em React e Socket.io.",
+    "vault": "Bot de Discord com painel web para auxiliar a seleção de tags no servidor Vault130. Desenvolvido em React e Discord.js."
+  }
+}
