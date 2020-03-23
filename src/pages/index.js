@@ -113,7 +113,13 @@ export default function Index() {
                     image={require("../assets/screenshots/rplace.jpg")}
                     link="https://github.com/DevNvll/rplace-mini"
                     title="RPlace Mini"
-                    description="Mini-game multiplayer em tempo real baseado no /r/place. Desenvolvido em React e Socket.io"
+                    description="Mini-game multiplayer em tempo real baseado no /r/place. Desenvolvido em React e Socket.io."
+                  />
+                  <Project
+                    image={require("../assets/screenshots/vault.jpg")}
+                    link="https://github.com/DevNvll/G.O.A.T"
+                    title="Bot Vault 130 (G.O.A.T)"
+                    description="Bot de Discord com painel web para auxiliar a seleção de tags no servidor Vault130. Desenvolvido em React e Discord.js."
                   />
                 </div>
               </section>
