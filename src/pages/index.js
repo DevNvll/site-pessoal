@@ -46,7 +46,7 @@ export default function Index() {
               </h1>
               <h2 className="text-xl md:text-3xl">
                 e sou um{" "}
-                <span className="text-gray-600 dark:text-gray-100 ">
+                <span className="font-semibold dark:text-gray-100">
                   FullStack Web Developer
                 </span>
                 .
