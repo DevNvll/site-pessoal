@@ -91,6 +91,12 @@ export default function Index() {
                 </h1>
                 <div className="grid grid-cols-1 md:grid-cols-2">
                   <Project
+                    image={require("../assets/screenshots/teza.jpg")}
+                    link="https://teza.com.br"
+                    title="TEZA"
+                    description="Aplicativo web em que trabalhei desde o início. Desenvolvi grande parte da UX e lógica de React junto com a equipe."
+                  />
+                  <Project
                     image={require("../assets/screenshots/siva.jpg")}
                     link="https://sivaig.now.sh"
                     title="Siva"
