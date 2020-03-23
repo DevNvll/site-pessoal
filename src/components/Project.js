@@ -9,7 +9,7 @@ export default function Project({ title, description, image, link }) {
           alt={"Imagem do projeto " + title}
         />
         <div
-          className="absolute bottom-0 w-full p-4"
+          className="absolute bottom-0 w-full p-4 pointer-events-none"
           style={{
             backdropFilter: "blur(8px)",
             backgroundColor: "rgba(5,5,5,0.5)"
