@@ -19,7 +19,8 @@ module.exports = {
       "focus",
       "active"
     ],
-    textColor: ["dark", "dark-hover", "dark-active"]
+    textColor: ["dark", "dark-hover", "dark-active"],
+    scale: ["responsive", "hover", "focus", "active", "group-hover"]
   },
   theme: {
     extend: {
