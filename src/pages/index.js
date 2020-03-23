@@ -7,7 +7,7 @@ import Project from "../components/Project"
 import Navbar from "../components/Navbar"
 
 export default function Index() {
-  const [isDarkMode, setDarkMode] = useState(false)
+  const [isDarkMode, setDarkMode] = useState(true)
   const { t, setLang } = useTranslation("pt")
 
   useEffect(() => {
