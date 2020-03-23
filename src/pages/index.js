@@ -137,6 +137,12 @@ export default function Index() {
               </section>
             </div>
           </main>
+          <footer className="flex justify-center w-full p-4 py-16 text-gray-400">
+            © 2020{" "}
+            <a href="http://hmello.now.sh/" className="ml-1 text-gray-500">
+              Henrick Mello
+            </a>
+          </footer>
         </div>
       </div>
     </>
