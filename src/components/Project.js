@@ -1,7 +1,7 @@
 export default function Project({ title, description, image, link }) {
   return (
     <a href={link} target="_blank" rel="noopener">
-      <div className="relative mx-4 mb-6 overflow-hidden text-center rounded shadow-lg mx:px-0 ">
+      <div className="relative mx-4 mb-6 overflow-hidden text-center rounded shadow-lg mx:px-0">
         <img
           src={image}
           className="object-cover w-full min-h-full transition-transform duration-500 ease-in-out transform hover:scale-105"

@@ -116,6 +116,12 @@ export default function Index() {
               e Electron."
                   />
                   <Project
+                    image={require("../assets/screenshots/gestif.jpg")}
+                    link="https://github.com/DevNvll/GestIF"
+                    title="GestIF"
+                    description="Sistema de gestão administrativa para o IFRJ Campus Arraial do Cabo. Desenvolvido com React, Express e MongoDB."
+                  />
+                  <Project
                     image={require("../assets/screenshots/rplace.jpg")}
                     link="https://github.com/DevNvll/rplace-mini"
                     title="RPlace Mini"
