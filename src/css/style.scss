@@ -1,0 +1,34 @@
+@keyframes cresent {
+  100% {
+    transform: translate(0px, 0px) scale(1.02);
+    box-shadow: 0 0 3px lighten(#d1d1d1, 10%), 0 0 25px 1px #d1d1d1;
+    background-color: #fff;
+  }
+}
+
+.moon {
+  background: #0a0a0a;
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  position: relative;
+
+  &::before {
+    content: " ";
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: block;
+    height: 95%;
+    width: 95%;
+    border-radius: 50%;
+    z-index: -1;
+    animation: 8.2s cresent linear infinite alternate;
+  }
+}
+
+@media (max-width: 768px) {
+  .moon {
+    width: 160px;
+    height: 160px;
+  }
+}

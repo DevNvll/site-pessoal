@@ -14,13 +14,6 @@ export default function Index() {
     if (window.localStorage.getItem("dark")) {
       setDarkMode(window.localStorage.getItem("dark") === "true")
       return
-    } else if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      setDarkMode(true)
-    } else {
-      setDarkMode(false)
     }
   }, [])
 
@@ -39,6 +32,11 @@ export default function Index() {
           content="Desenvolvedor Web FullStack. NodeJs/React."
         />
       </Head>
+      {isDarkMode ? (
+        <div className="absolute z-10 flex items-center justify-center w-full h-screen ">
+          <div className="top-0 left-0 moon"></div>
+        </div>
+      ) : null}
 
       <div className={cx({ "mode-dark": isDarkMode })}>
         <Navbar
@@ -47,9 +45,10 @@ export default function Index() {
             setDark(!isDarkMode)
           }}
         />
+
         <div className="w-full min-h-screen text-gray-600 bg-gray-100 dark:text-gray-200 dark:bg-gray-900">
           <div className="flex flex-col items-center justify-center w-full h-screen">
-            <div className="mx-2">
+            <div className="absolute z-50 mx-2 ">
               <h1 className="text-4xl font-thin text-gray-600 md:text-5xl dark:text-gray-200">
                 {t("myNameIs")}{" "}
                 <span className="font-medium dark:text-white">

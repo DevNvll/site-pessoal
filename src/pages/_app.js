@@ -1,6 +1,7 @@
 import React from "react"
 import App from "next/app"
 import "../css/tailwind.css"
+import "../css/style.scss"
 import Head from "next/head"
 
 class MyApp extends App {
