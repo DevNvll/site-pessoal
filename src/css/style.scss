@@ -32,3 +32,39 @@
     height: 160px;
   }
 }
+
+// white
+@keyframes cresent-white {
+  100% {
+    transform: translate(0px, 0px) scale(1.02);
+    box-shadow: 0 0 1px lighten(#080808, 10%), 0 0 25px 1px #080808;
+    background-color: rgb(228, 228, 228);
+  }
+}
+
+.moon-white {
+  background: #e9e9e9;
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  position: relative;
+
+  &::before {
+    content: " ";
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: block;
+    height: 95%;
+    width: 95%;
+    border-radius: 50%;
+    z-index: -1;
+    animation: 8.2s cresent-white linear infinite alternate;
+  }
+}
+
+@media (max-width: 768px) {
+  .moon-white {
+    width: 160px;
+    height: 160px;
+  }
+}

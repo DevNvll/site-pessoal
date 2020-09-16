@@ -32,11 +32,14 @@ export default function Index() {
           content="Desenvolvedor Web FullStack. NodeJs/React."
         />
       </Head>
-      {isDarkMode ? (
-        <div className="absolute z-10 flex items-center justify-center w-full h-screen ">
-          <div className="top-0 left-0 moon"></div>
-        </div>
-      ) : null}
+      <div className="absolute z-10 flex items-center justify-center w-full h-screen ">
+        <div
+          className={cx("top-0 left-0", {
+            moon: isDarkMode,
+            "moon-white": !isDarkMode,
+          })}
+        ></div>
+      </div>
 
       <div className={cx({ "mode-dark": isDarkMode })}>
         <Navbar
